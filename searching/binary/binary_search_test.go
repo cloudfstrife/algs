@@ -33,7 +33,7 @@ func TestSearch(t *testing.T) {
 
 func BenchmarkSearch(b *testing.B) {
 	// 数据准备
-	dataFilePath := "../../data/largeW.txt"
+	dataFilePath := "../../data/algs4-data/largeW.txt"
 	var (
 		file *os.File
 		err  error
@@ -76,7 +76,7 @@ func TestRecursionSearch(t *testing.T) {
 
 func BenchmarkRecursionSearch(b *testing.B) {
 	// 数据准备
-	dataFilePath := "../../data/largeW.txt"
+	dataFilePath := "../../data/algs4-data/largeW.txt"
 	var (
 		file *os.File
 		err  error
