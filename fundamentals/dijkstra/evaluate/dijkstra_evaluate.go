@@ -33,6 +33,9 @@ func DijkstraEvluate(slist []string) (float64, error) {
 				return 0, err
 			}
 			opt, err := ops.Pop()
+			if err != nil {
+				return 0, err
+			}
 			switch opt {
 			case "+":
 				v2, err := vals.Pop()
