@@ -21,8 +21,7 @@ func TestSelectSort(t *testing.T) {
 	in := commons.NewIn(inFile)
 
 	for !in.IsEmpty() {
-		var all []rune
-		all = in.ReadAllRune()
+		var all []rune = in.ReadAllRune()
 		t.Log(sorting.RuneSlice(all))
 		Sort(sorting.RuneSlice(all))
 		t.Log(sorting.RuneSlice(all))
