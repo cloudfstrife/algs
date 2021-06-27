@@ -2,7 +2,7 @@ package insertion
 
 import "github.com/cloudfstrife/algs/sorting"
 
-// Sort selection sort
+// Sort insertion sort
 func Sort(a sorting.Sortable) {
 	for i := 1; i < a.Len(); i++ {
 		for j := i; j > 0; j-- {
