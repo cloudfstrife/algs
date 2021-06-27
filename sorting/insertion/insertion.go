@@ -5,9 +5,9 @@ import "github.com/cloudfstrife/algs/sorting"
 // Sort selection sort
 func Sort(a sorting.Sortable) {
 	for i := 1; i < a.Len(); i++ {
-		for j := 0; j < i; j++ {
-			if a.Less(i, j) {
-				a.Swap(i, j)
+		for j := i; j > 0; j-- {
+			if a.Less(j, j-1) {
+				a.Swap(j, j-1)
 			}
 		}
 	}
